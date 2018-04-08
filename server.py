@@ -21,7 +21,7 @@ app = Flask(__name__)
 bootstrap = Bootstrap(app)
 app.secret_key = SECRET_KEY
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:wdbuyer@10.1.101.161/wdbuyer_test"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@10.10.10.10/root"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db.init_app(app)
